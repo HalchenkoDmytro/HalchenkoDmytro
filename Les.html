@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+    <meta charset="utf-8">
+    <title>Семантика HTML</title>
+    <style type="text/css">
+            .line {
+                border-left: 2px solid rgb(47, 158, 19);
+                margin-left: 20px;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+        <header>
+            <h1>HTML5 Семантичні елементи</h1>
+        </header>
+        </section>
+        <main>
+            <p>Семантичний елемент чіко описує його значення як для браузера, ак і для розробника</p>
+            <p>Приклади <b> не семантичних</b> елементів: <kbd>&ltdiv&gt</kbd> і <kbd>&ltspan&gt</kbd> - нічого не говорить про його вміст</p>
+            <p>Приклади <b>семантичних</b> елемeнтів: <kbd>&ltform&gt, &lttable&gt</kbd> і <kbd>&ltarticle&gt</kbd> - чітко визначає його зміст</p>
+            <br>
+        </main>
+        <section>
+            <header><h2>Пітримка браузерів</h2></header>
+            <img src="ch.png" title="Crome" hspace="5">
+            <img src="ed.png" title="Edge" hspace="5">
+            <img src="fr.png" title="Firefox" hspace="5">
+            <img src="saf.png" title="Safari" hspace="5">
+            <img src="op.png" title="Opera">
+        </section>
+        <article>
+            <p>Семантичны елементи HTML5 підтримуються у всіх сучасних браузерах</p>
+            <p>Крім того, ви можете "навчити старих браузерів", як обробляти "невідомі елементи"</p>
+            <p>Прочитайте про це в <a href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#" target="_blank"> підтримці браузерів HTML5</a></p>
+            <br>
+        </article>
+        <section>
+        <header><h2>Нові семантичні елементи в HTML5</h2></header>
+        <p>HTML5 пропонує нові семантичні елемнти для визначення різних частин веб-сторінки:</p>
+        <ul>
+            <li><a href ="Les.html#section"><kbd> &ltsection&gt</kbd></a></li>
+            <li><a href="Les.html#article"><kbd>&ltarcticle&gt</kbd></a></li>
+            <li><a href="Les.html#header"><kbd>&ltheader&gt</kbd></a></li>
+            <li><a href="Les.html#footer"><kbd>&ltfooter&gt</kbd></a></li>
+        </ul>
+        <br>
+        </section>
+         <article> 
+        <header><a name = "section"><h2>HTML5  &ltsection&gt елемент</h2></a></header>
+        <p>Елемент <kbd>&ltsection&gt</kbd> визначає розділ у документі.</p>
+        <p>Згідно з документацією HTML5: "розділ представляє собою тематичне угрупування контенту, зазвичай чз заголовком"</p>
+        <p>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної інформації.</p>
+        <p><font size="5"><kbd>Приклад</kbd></font></p>
+        <p class="line"><kbd>
+            &ltsection&gt <br>
+            &lth1&gt WWF &lt/h1&gt<br>
+            &ltp&gt The World Wide Fund for Nature (WWF) is ...&lt/p&gt<br>
+            &lt/section&gt <br>         
+            </kbd>
+        </p>
+        <br>
+        </article>
+        <article> 
+        <header><a name = "article"><h2>HTML5  &ltarticle&gt елемент</h2></a></header>
+        <p>Елемент <kbd>&ltarticle&gt</kbd> визначає розділ у документі.</p>
+        <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту.</p>
+        <p>Приклади того, де можна використовувати елемент &ltarticle&gt:</p>
+        <ul>
+            <li>повідомлення на форумі</li>
+            <li>блозі</li>
+            <li>газетна стаття</li>
+        </ul>
+        <p><font size="5"><kbd>Приклад</kbd></font></p>
+        <p class="line"><kbd>
+            &ltarticle&gt <br>
+            &lth1&gt What Does WWF Do? &lt/h1&gt<br>
+            &ltp&gtWW's mission is to stop the degradation of our planet's natural enviroment <br>
+            and build a future in which humans live in harmony with nature. &lt/p&gt<br>
+            &lt/article&gt <br>         
+            </kbd>
+        </p>
+        <br>
+        </article>
+        <article> 
+        <header><a name = "header"><h2>HTML5  &ltheader&gt елемент</h2></a></header>
+        <p>Елемент <kbd>&ltheader&gt</kbd> задає заголовок для документа або розділу.</p>
+        <p>В одному документі може бути кілька елементів  <kbd>&ltheader&gt</kbd>.</p>
+        <p>У наступному прикладі визначається заголовок для статті:</p>
+        <p><font size="5"><kbd>Приклад</kbd></font></p>
+        <p class="line"><kbd>
+            &ltarticle&gt <br>
+            &ltheader&gt<br>
+            &lth1&gt What Does WWF Do? &lt/h1&gt<br>
+            &ltp&gtWW's mission:&gt<br>
+            &lt/header&gt<br>
+            &ltp&gtWW's mission is to stop the degradation of our planet's natural enviroment <br>
+            and build a future in which humans live in harmony with nature. &lt/p&gt<br>
+            &lt/article&gt <br>         
+            </kbd>
+        </p>
+        </article>
+
+        <article> 
+        <header><a name = "footer"><h2>HTML5 &ltfooter&gt елемент</h2></a></header>
+        <p>Елемент <kbd>&ltfooter&gt</kbd> вказує нижній колонтитул для документу або розділу.</p>
+        <p>Нижній елемент зазвичай містить автора документу, інформацію про авторське право, посилання на умови використання, контактні дані і т.д.</p>
+        <p>В одному документі може бути кілька елементів  <kbd>&ltfooter&gt</kbd>.</p>
+        <p><font size="5"><kbd>Приклад</kbd></font></p>
+        <p class="line"><kbd>
+            &ltfooter&gt <br>
+            &ltp&gt Posted by:Hege Refsnes &lt/p&gt<br>
+            &ltp&gt Contact information:&gt<br>
+            &lt/footer&gt<br>                   
+            </kbd>
+        </p>
+        </article>
+
+        <section>
+            <iframe src="Rezume Halchenko(en).html" width="680" height="480" allowfullscreen scrolling="auto">Я так і не зміг відобразити сторінку, перепробував усі можливі варіанти указання посилання на сторінку</iframe>
+         </section>
+         <section>
+            <p><embed  width = "400" height = "300" src = "https://www.youtube.com/embed/FII4DRuiLLI&t"></p>
+            <p><embed  width = "400" height = "300" src = "https://www.youtube.com/embed/pDiT9HYhE5g"></p>
+        </section>
+
+    <section><p>Copyright Гальченко Дмитро</p></section>
+    
+    
+    </body>
+</html>

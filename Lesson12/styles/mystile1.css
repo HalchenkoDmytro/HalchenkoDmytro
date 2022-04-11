@@ -1,0 +1,64 @@
+.div {
+  font-size: 36px;
+  color: blue;
+}
+
+.container {
+  width: 2000px;
+  height: 220px;
+  display: inline;
+  position: relative; 
+}
+
+.img {
+  width: 20%;
+  height: 20%;
+  perspective: 1000px;
+  cursor: pointer;
+  display: inline;
+  padding-left: 10px;
+  margin-right: 0px;
+}
+
+.img_front {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.img_back {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.img_front img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.img_back {
+  transform: rotateX(180deg);
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.img:hover .img_front {
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+  }
+
+  .img:hover .img_back {
+  transform: rotateX(360deg);
+}
+

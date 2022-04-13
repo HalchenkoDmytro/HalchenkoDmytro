@@ -1,0 +1,157 @@
+body {
+  width: 1440px;
+  max-height: 900px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;  
+}
+
+.header {  
+  width: 1150px;
+  height: 80px;
+  margin-left: 145px;
+  margin-top: 40px;
+  vertical-align: middle;
+  font-family: 'Quicksand',sans-serif;
+  word-spacing: 14px;
+  margin-bottom: 100px;
+}
+
+.svg_header {
+  margin-right: 14px;
+}
+
+.nunito_color {
+  color:  #16133D;
+}
+
+.service {
+  display:inline;
+  width: 1160px;
+  height: 470px;
+}
+
+.h {
+  display: inline;
+  font-size: 16px;
+  color: #7690A8;
+  margin-left: 145px;
+}
+
+.cont {
+  width: 360px;
+  height: 350px;
+  border-radius: 8px;
+  border: 1px solid #E5EAF4;
+  background-color: transparent;
+  margin-right: 40px;
+}
+
+.div_svg {
+  width: 64px;
+  height: 64px;
+  margin-left: 40px;
+  margin-top: 40px;
+  
+  border-radius: 16px; 
+  border: 1px solid rgba(21, 101, 216, 0.1);
+}
+
+.cont:hover {
+  border: 1px solid #007FFC;
+  background-color: transparent;
+  transition: all .8s ease;
+}
+
+.flex {
+  display: flex;
+  padding-left: 145px;
+}
+
+.svg {    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;     
+  }
+
+.svg:hover {
+  fill: #386491;
+  transition: all .8s ease;
+  transform: scale(1.1);
+}
+
+.h1 {
+  font-family: 'Nunito', sans-serif;    
+  font-size: 40px;
+  margin-top: 17px;
+  margin-left: 145px;
+}
+
+.title_block {
+  font-size: 24px;
+  padding-top: 0px;
+  margin-left: 40px;
+}
+
+.text_block {
+  width: 270px;
+  height: 85px;
+  margin-left: 40px;
+  padding-top: 40px;
+  font-size: 16px;
+}
+
+.text_bottom {
+  margin-left: 40px;
+}
+  
+.block_center {
+  width: 360px;
+  height: 350px;
+  border-radius: 8px;
+  border: 1px solid #3DB370;
+  background-color: transparent;
+  margin-right: 40px;
+}
+
+.block_center:hover {
+  border: 1px solid #007FFC;
+  background-color: transparent;
+  transition: all .8s ease;
+}
+
+.footer {
+  width: 1440px;
+  height: 120px;
+  background-color: #16133D;
+  margin-left: 145px;
+  margin-top: 90px;
+  vertical-align: middle;
+  font-family: 'Quicksand',sans-serif;
+  word-spacing: 14px;
+  color: white;
+  padding: 40px;
+}
+
+.footer_block {
+  width: 21px;
+  height: 21px;
+  border-radius: 5px;
+  background-color: #EFEEF3;
+  padding: 10px;
+  margin: 9px;
+}
+
+.footer_svg {
+  width: 20px;
+  height: 20px;  
+}
+
+.footer_svg:hover path {
+  fill: #386491;
+  transition: all .8s ease;  
+}
+
+.flex_footer {
+  display: flex;
+}

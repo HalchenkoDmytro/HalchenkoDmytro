@@ -1,0 +1,53 @@
+body {
+  max-width: 1500px;
+  max-height: 1500px;
+  background-color: white;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.header {
+  display: inline;
+  margin-left: 40px;
+  vertical-align: middle;
+}
+
+.up {
+  text-transform:uppercase;
+}
+
+.upper {
+  
+  letter-spacing: 0.04em;
+  font-family: 'Tourney', cursive;
+  padding: 1px;
+}
+
+.img {
+  width: 240px;
+  height: 50px;
+  float: right;
+}
+
+.frame {
+  padding-top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 95%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ul::before {
+  content: '+';
+}
+
+.under {
+  text-decoration-line: underline;
+}
+
+

@@ -1,0 +1,34 @@
+.img_menu {
+  display: flex;
+  float: left;
+  align-items: center;
+  width: 104px;
+  height: 32px;
+  margin-left: 31px;
+  
+}
+
+.new_navbar {
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.navbar-light, 
+.navbar-toggler,
+.navbar-brand,
+.offcanvas-title,
+.offcanvas-header {
+  color: antiquewhite;
+}
+
+.offcanvas {
+  background-color: darkgrey;
+  width: 30%;
+  color: wheat!important;
+}
+.navbar-toggler {
+  border-color:wheat!important;
+  background-color: rgb(95, 84, 71);
+  color: azure!important;
+}

@@ -1,0 +1,62 @@
+.hero_1 {
+  max-width: 566px;
+  max-height: 300px;
+  margin-left: 64px;
+  color: aliceblue;
+  display:inline-block;
+  z-index: 20;
+  position: absolute;
+  top: 269px;
+}
+
+.hero_2 {
+  max-width: 1152px;
+  max-height: 680px;
+  background-color: #161926;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.hero_3 {
+  padding-top: 140px;
+  background-color: #161926;  
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video {
+  //width: 100%;
+  height: 974px;
+  background-color: #161926;
+  padding-top: 121px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.section_top {
+  margin-top: 32px;
+}
+
+.section_bottom {
+  margin-bottom: 140px;
+}
+
+.hero_4 {
+  background: url(../img/quote-background.png);
+  width: 1152px;
+  height: 400px;
+  margin: auto 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  display: none;
+}
+
+
+

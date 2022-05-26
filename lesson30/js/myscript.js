@@ -34,36 +34,76 @@ priceTotal: function() {
 }
 ]
 
+
+// level MIN
+
 function statusProduct(arr) {
-  const res_false = listProduct.filter(listProduct => listProduct.purchased === false);
-  res_false.sort((a, b) => a.prName > b.prName ? 1 : -1);
-  const res_true = listProduct.filter(listProduct => listProduct.purchased === true);
-  res_true.sort((a, b) => a.prName > b.prName ? 1 : -1);
-  return res_false.concat(res_true);
+  const resFalse = listProduct.filter(listProduct => listProduct.purchased === false);
+  resFalse.sort((a, b) => a.prName > b.prName ? 1 : -1);
+  const resTrue = listProduct.filter(listProduct => listProduct.purchased === true);
+  resTrue.sort((a, b) => a.prName > b.prName ? 1 : -1);
+  return resFalse.concat(resTrue);
 }
 
 console.log(statusProduct(listProduct));
 
 function dontShop(arr) {
-  const res_false = listProduct.filter(listProduct => listProduct.purchased === false);
-  return res_false;
+  const resFalse = listProduct.filter(listProduct => listProduct.purchased === false);
+  return resFalse;
 }
 
 console.log(dontShop(listProduct));
+
+
+// level NORMA
+
+function newListProduct(arr, prodName) {
+  return arr.filter(function(el) {
+    return el.prName !== prodName;
+  });
+}
+
+console.log(newListProduct(listProduct, 'Milk'));
+
+function addNewProduct(arr, prodName) {
+  if (arr.prName === prodName) {
+    return {...arr, 
+    count: arr.count = arr.count + 1 ,
+    }
+  } else {return {...arr,
+    prName: arr.prName = prodName,
+  }
+}
+}
+console.log(addNewProduct(listProduct, 'Apple'));
+
+
+
+
+//level MAX
 
 function totalPriceShop(arr) {  
   return arr.reduce((s, ar) => s + ar.priceTotal(), 0);
 }
 
-console.log(totalPriceShop(listProduct));
+console.log( 'Total amount = ' +  totalPriceShop(listProduct));
 
 function totalTrueShop(arr) {
-  let s = 0;
-  arr.reduce( function(sum, el) {
-    if (el.purchased === true) {
-      return sum + el.priceTotal();
+  return arr.reduce( (sum, ar) => {    
+    if (ar.purchased === true) {
+      return sum + ar.priceTotal();
     } else {return sum}
-  })
+  }, 0)
 }
- 
-console.log(totalTrueShop(listProduct));
+
+console.log( 'Amount of purchased products = ' + totalTrueShop(listProduct));
+
+function totalFalseShop(arr) {
+  return arr.reduce( (sum, ar) => {    
+    if (ar.purchased === false) {
+      return sum + ar.priceTotal();
+    } else {return sum}
+  }, 0)
+}
+
+console.log( 'Amount of unpurchased products = ' + totalFalseShop(listProduct));

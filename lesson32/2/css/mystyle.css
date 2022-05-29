@@ -1,0 +1,28 @@
+body {
+  box-sizing: border-box;
+}
+
+.btnOpen {
+  cursor: pointer;
+  margin: 50px auto;
+  display: block;
+}
+
+.modal {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  z-index: 10;
+  overflow: auto;
+  margin: 0 auto;
+  display: block;
+  background-color:antiquewhite;
+  text-align: center;
+  display: none;
+}
+
+.btnClose {
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}

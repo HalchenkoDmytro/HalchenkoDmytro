@@ -1,0 +1,25 @@
+body {
+  box-sizing: border-box;
+}
+
+.div__field {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid brown;
+}
+.div__field--changer {
+  display: block;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  z-index: 1;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border: 2px solid brown;
+  cursor:nesw-resize;
+}

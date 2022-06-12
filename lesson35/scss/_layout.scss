@@ -1,0 +1,110 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  @include center;
+}
+
+.product-list {
+  height: 440px;
+  width: 1200px;
+  gap: 20px;
+  @include center;
+}
+
+
+.img-item {
+  display: inline-flex !important;
+  width: 204px;
+  height: 300px;
+  align-self: stretch;
+}
+
+.img-partners {
+  display: inline-flex !important;
+  width: 114px;
+  height: 35px;
+  align-self: stretch;
+}
+
+.svg-contact {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__inst {
+    background: url(../img/contact/instagram.svg) no-repeat;
+
+    &:hover {
+      background: url(../img/contact-red/instagram.svg) no-repeat;
+    }
+  }
+
+  &__facebook {
+    background: url(../img/contact/facebook.svg) no-repeat;
+
+    &:hover {
+      background: url(../img/contact-red/facebook.svg) no-repeat;
+    }
+  }
+
+  &__print {
+    background: url(../img/contact/pinterest.svg) no-repeat;
+
+     &:hover {
+    background: url(../img/contact-red/pinterest.svg) no-repeat;
+  }  
+
+  }
+&__twitter {
+    background: url(../img/contact/twitter.svg) no-repeat;
+
+    &:hover {
+      background: url(../img/contact-red/twitter.svg) no-repeat;
+    }
+  }
+
+  &__youtube {
+    background: url(../img/contact/youtube.svg) no-repeat;
+
+    &:hover {
+      background: url(../img/contact-red/youtube.svg) no-repeat;
+    }
+  }  
+}
+
+.yourClass, .products {
+  &__slider {
+    position: relative;
+
+    &> .slick-dots {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
+
+      li {
+        list-style: none;
+        margin: 0 15px;
+
+        &.slick-active button {
+          background-color: $hover_color;
+        }
+      }
+
+      button {
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        background-color: rgba(248, 241, 234, 1);
+        border-radius: 50%;
+        border: none;
+        z-index: 5;
+      }
+    }
+  }
+}

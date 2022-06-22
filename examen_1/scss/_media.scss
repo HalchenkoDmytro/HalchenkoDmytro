@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+
+  .navbar {
+    display: inline;
+    backdrop-filter: blur(9px);
+    background: transparent;
+    margin-bottom: 10px;
+    height: 45px;
+    position: static;
+  }
+}

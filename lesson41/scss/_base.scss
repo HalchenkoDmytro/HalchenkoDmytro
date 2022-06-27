@@ -1,0 +1,10 @@
+*, *:before, *:after 
+{ box-sizing: border-box; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  //padding: 120px 135px;
+  padding: 8.333vw 9.375vw;
+}
+

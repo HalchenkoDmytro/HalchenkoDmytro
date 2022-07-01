@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  
+  body {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .header {
+    max-width: 50%;
+    max-height: 70%;
+  }
+/* 
+  .content {
+    width: 50%;
+    height: 50%;
+  } */
+}
+  
+
+
+@media screen and (max-width: 320px) {
+    .nav {
+      display: none;
+    }
+  }

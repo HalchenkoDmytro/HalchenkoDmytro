@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+}
+
+.city {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  @include gap-grid;
+  margin-bottom: 120px;
+}
+
+.nature {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 370px, 770px, 370px;
+  @include gap-grid;
+  margin-bottom: 120px;
+}
+
+.people {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  @include gap-grid;
+}

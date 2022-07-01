@@ -1,0 +1,29 @@
+p {
+  text-align: center;
+  position: absolute;
+  bottom: 0;  
+  z-index: 20;
+
+  &.title {
+    margin-bottom: 80px;
+    position: relative;
+    color: black;
+    font-family: $title-grid;
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 45.07px;
+    letter-spacing: 5%;
+  }
+
+  &.name {
+    left: 20px;
+    @include item-text;
+    font-weight: 500;
+  }
+
+  &.data {
+    right: 20px;
+    @include item-text;
+    font-weight: 400;
+  }
+}

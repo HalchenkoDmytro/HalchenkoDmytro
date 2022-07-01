@@ -1,0 +1,62 @@
+@media screen and (max-width: 1300px) {
+  p {
+
+    &.title {
+      margin-bottom: 40px;
+    }
+
+    &.name {
+      font-size: 90%;
+    }
+  
+    &.data {
+      font-size: 90%;
+    }
+  }
+
+  .download, .heart {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .city {
+    @include respon;
+    
+    .grid-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  .nature {
+    @include respon;
+
+    .grid-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  .people {
+    @include respon;
+
+    .grid-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    &.title {
+      margin-bottom: 20px;
+      font-size: 85%;
+    }
+
+    &.name {
+      font-size: 80%;
+    }
+  
+    &.data {
+      font-size: 80%;
+    }
+  }
+}
